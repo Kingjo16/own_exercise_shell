@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Array of month names
+months=(January February March April May June July Aug September October November December)
+# Get current month name
+month=$(date +%b)
+
+# Loop through month names
+for m in "${months[@]}"
+do
+  # Check if current month matches
+  if [ "$month" == "$m" ]; then
+    echo "Current month is $m"
+    exit
+  fi
+done
+
+echo "Could not detect current month"

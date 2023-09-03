@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Get a variable Y which is a month Y=[1-12}
+
+	month=$(date +%m)
+# Check if it is augest baby
+
+if [ $month -eq 8 ]; then 
+	echo "augest baby"
+else 
+	echo " guess again fool"
+fi 

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Get what month it is right now with number (1-12)
+
+	month=$(date +%m)
+# chech if the month is 10(october) which is descibed in number
+
+if [ $month -eq 10 ]; then
+	
+	echo "October"
+else
+	echo "guess again fool"
+fi 

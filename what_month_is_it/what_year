@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# lets list the years array
+	
+	years=(2021 2022 2023 2024)
+
+# declare what year it is 
+
+	year=$(date +%Y)
+
+# looping through the array
+
+	for y in "${years[@]}"
+do
+
+# check the year
+
+	if [ "$year" == "$y" ]; then
+	
+		echo "the current year is $y"
+
+	exit
+
+		fi
+
+done
+
+# if the year is not available in the array it will print i don't know
+
+	echo "i don't know"
+

@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# we declare a variable y which is a month y= number (1-12)
+
+ 
+	y=$(date +%m)
+
+# this will tell us the exact month number
+# if it is +%B this will tell us the exact month with out abrivation like June
+# date +%b abrivation
+# date +%y year with number
+
+# Now to determine if the mothe is jun or not we will use the if statement 
+ 
+	if [ $y -eq 4 ]; then
+		echo "it jun"
+ 	else
+		echo "its not fool"
+	fi  

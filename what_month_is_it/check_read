@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Initialize count to 0 
+count=0
+
+# Loop through all files in current directory
+for file in *; do
+
+  # Check if file has read permission
+  if [ -r "$file" ]; then
+    
+    # Increment count if read permission found
+    ((count++))
+
+  fi
+
+done
+
+# Print total count
+ 
+echo "Total readable files: $count"
